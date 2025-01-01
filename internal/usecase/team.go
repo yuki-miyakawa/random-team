@@ -28,7 +28,7 @@ type Member struct {
 
 func dividedIntoThreeAndOne(members []Member) error {
 	teamText := fmt.Sprintf(
-		"## ---Alpha Team---\n%s\n%s\n%s\n\n## ---Bravo Team---\n%s\n",
+		"## ---Alpha Team---\n%s\n%s\n%s\n## ---Bravo Team---\n%s\n\n\n",
 		members[0].Name,
 		members[1].Name,
 		members[2].Name,
@@ -42,7 +42,7 @@ func dividedIntoThreeAndOne(members []Member) error {
 
 func dividedIntoFourAndOne(members []Member) error {
 	teamText := fmt.Sprintf(
-		"## ---Alpha Team---\n%s\n%s\n%s\n%s\n\n## ---Bravo Team---\n%s\n",
+		"## ---Alpha Team---\n%s\n%s\n%s\n%s\n## ---Bravo Team---\n%s\n\n\n",
 		members[0].Name,
 		members[1].Name,
 		members[2].Name,
@@ -57,7 +57,7 @@ func dividedIntoFourAndOne(members []Member) error {
 
 func dividedIntoFourAndTwo(members []Member) error {
 	teamText := fmt.Sprintf(
-		"## ---Alpha Team---\n%s\n%s\n%s\n%s\n\n## ---Bravo Team---\n%s\n%s\n",
+		"## ---Alpha Team---\n%s\n%s\n%s\n%s\n## ---Bravo Team---\n%s\n%s\n\n\n",
 		members[0].Name,
 		members[1].Name,
 		members[2].Name,
