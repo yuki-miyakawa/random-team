@@ -9,7 +9,6 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/joho/godotenv"
 	"github.com/labstack/echo/v4"
 	"github.com/yuki-miyakawa/discord"
 )
@@ -72,7 +71,6 @@ func dividedIntoFourAndTwo(members []Member) error {
 }
 
 func MakeTeam(c echo.Context) error {
-	godotenv.Load()
 	memStr := os.Getenv("MEMBERS")
 	memSlice := strings.Split(memStr, ",")
 	members := make([]Member, len(memSlice))
